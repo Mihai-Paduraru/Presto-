@@ -1,0 +1,82 @@
+:root{
+    --principal: #6869AA ;
+    --secondario:#393bb9 ;
+    --terziario: #9798f7 ;
+    --quarto: #ba47ea;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: var(--quarto);
+    overflow-y: hidden;
+}
+
+
+/* nav */
+
+.logo{
+    height: 100px;
+}
+
+.nav-castom{
+    
+    height: 10ch;
+}
+
+/* fine nav */
+
+
+.swiper, .swiper-wrapper, .swiper-slide {
+    height: 100vh;
+} 
+
+
+/* heder */
+
+.immagine{
+    background-image: url(./media/bimbo.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo2{
+    height: 50vh;
+    width: 55vh;
+}
+
+
+.icon2 , .icon3 , .freciaADestra{
+    color: var(--principal);
+    align-self: center;
+    transition: 0.4s;
+}
+
+.icon2:hover , .icon3:hover , .freciaADestra:hover{
+    transform: scale(2);
+}
+/* fine heder */
+
+/* car1 */
+
+.card{
+    height: 55vh;
+    border: none;
+    border-radius: 5%;
+    background-color: var(--terziario);
+    color: white;
+    transition: 0.4s;
+}
+
+.card:hover{
+    transform: scale(1.2);
+}

@@ -1,0 +1,162 @@
+:root{
+    --principal: #6869AA ;
+    --secondario:#393bb9 ;
+    --terziario: #9798f7 ;
+    --quarto: #56206b;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: var(--quarto);
+    overflow-y: hidden;
+}
+
+
+/* nav */
+
+.logo{
+    height: 100px;
+}
+
+.nav-castom{
+    
+    height: 10ch;
+}
+
+/* fine nav */
+
+
+.swiper, .swiper-wrapper, .swiper-slide {
+    height: 100vh;
+} 
+
+
+/* heder */
+
+.immagine{
+    background-image: url(./media/uomo.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo2{
+    height: 50vh;
+    width: 55vh;
+}
+
+
+.icon2 , .icon3{
+    color: var(--secondario);
+    align-self: center;
+    transition: 0.4s;
+}
+
+.icon2:hover , .icon3:hover{
+    transform: scale(2);
+}
+/* fine heder */
+
+
+/* car1 */
+
+.img-castom {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  .btn {
+    background-color: white;
+    box-shadow: 2px 2px 5px black !important;
+    padding: 0.5rem;
+    transition: 0.4s;
+    text-transform: lowercase;
+  }
+  .btn:hover{
+    transform: scale(1.1);
+  }
+  
+  .btn--block {
+    display: block;
+    width: 100%;
+  }
+   
+  .cards {
+    height: 90vh;
+    width: 30vw;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    
+  }
+  
+  .cards__item {
+    display: flex;
+    padding: 1rem;
+    @media(min-width: 40rem) {
+      width: 50%;
+    }
+    @media(min-width: 56rem) {
+      width: 33.3333%;
+    }
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s;
+    overflow: hidden;
+  }
+  .card:hover{
+    transform: scale(1.1);
+  }
+  
+  .card__content {
+    height: 3vh;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .card__image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    filter: contrast(70%);
+    overflow: hidden;
+    position: relative;
+    transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);;
+   
+  }
+  
+  
+  
+  .card__title {
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .card__text {
+    flex: 1 1 auto;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+  }
